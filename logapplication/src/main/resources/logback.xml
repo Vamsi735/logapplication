@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                [%d] [%thread] %level %logger %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <appender name = "RollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>NewAppLoggg.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>[%d] [%thread] %level %logger %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>NewAppLog-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each archived file, size max 5KB -->
+            <maxFileSize>3KB</maxFileSize>
+            <!-- total size of all archive files, if total size > 20KB,
+				it will delete old archived file -->
+            <totalSizeCap>30MB</totalSizeCap>
+            <!-- 60 days to keep -->
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="RollingFile" />
+    </root>
+</configuration>

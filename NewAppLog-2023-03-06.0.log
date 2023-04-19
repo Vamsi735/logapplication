@@ -1,0 +1,20 @@
+[2023-03-06 14:35:42,276] [main] INFO com.logging.logapplication.LogapplicationApplication Starting LogapplicationApplication using Java 19.0.2 with PID 7276 (C:\Users\vamsi\IdeaProjects\logapplication\logapplication\target\classes started by vamsi in C:\Users\vamsi\IdeaProjects\logapplication)
+[2023-03-06 14:35:42,282] [main] INFO com.logging.logapplication.LogapplicationApplication No active profile set, falling back to 1 default profile: "default"
+[2023-03-06 14:35:45,188] [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-03-06 14:35:45,272] [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
+[2023-03-06 14:35:46,461] [main] INFO org.springframework.cloud.context.scope.GenericScope BeanFactory id=deb34322-7dec-3162-aa9b-3ea1354a206f
+[2023-03-06 14:35:49,164] [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-03-06 14:35:49,200] [main] INFO org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-03-06 14:35:49,202] [main] INFO org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-03-06 14:35:49,203] [main] INFO org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.5]
+[2023-03-06 14:35:49,577] [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-03-06 14:35:49,577] [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 7138 ms
+[2023-03-06 14:35:50,123] [main] INFO com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2023-03-06 14:35:50,864] [main] INFO com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:838eb337-0e61-458f-a95e-56121d527add user=SA
+[2023-03-06 14:35:50,869] [main] INFO com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2023-03-06 14:35:51,084] [main] INFO org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-03-06 14:35:51,394] [main] INFO org.hibernate.Version HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-03-06 14:35:52,591] [main] INFO SQL dialect HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-03-06 14:35:53,426] [main] INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-03-06 14:35:53,458] [main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-03-06 14:35:53,567] [main] WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
